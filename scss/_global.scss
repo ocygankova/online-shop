@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: $width-min-body;
+  color: $color-font;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $color-light;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  letter-spacing: $letter-spacing-base;
+}
+
+.container {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+  @media (max-width: $width-m) {
+    padding: 0 15px;
+  }
+}
+.wrapper {
+  min-height: 100vh;
+}
+.hidden {
+  display: none;
+  pointer-events: none;
+}

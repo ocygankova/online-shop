@@ -1,0 +1,35 @@
+//colors
+$color-primary: #c14d4d;
+$color-light: #fff;
+$color-dark: #0c2147;
+$color-muted: #6f7d96;
+$color-overlay: #000;
+$color-lightgrey: #e0e9f0;
+$color-bg-light: #e6f1f9;
+$color-font: $color-muted;
+
+//font
+$font-size-base: 17px;
+$line-height-base: 26px;
+$font-family-base: 'Urbanist', sans-serif;
+$font-family-highlighted: 'Roboto Condensed', sans-serif;
+$font-weight-base: 500;
+$letter-spacing-base: normal;
+
+//container
+$width-min-body: 320px;
+$width-container: 1500px; //max-width + padding
+
+//media
+$width-xl: 1400px;
+$width-l: 1200px;
+$width-m: 992px;
+$width-s: 768px;
+$width-xs: 576px;
+
+$height-s: 768px;
+$height-xs: 576px;
+
+//other
+$border-radius-s: 4px;
+$box-shadow-s: 0 2px 6px 0 rgba($color-dark, 0.3);

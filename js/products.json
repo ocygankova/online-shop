@@ -1,0 +1,86 @@
+[
+  {
+    "id": "001",
+    "name": "Utopia Grey Sofa",
+    "brand": "Marizza",
+    "price": 27000,
+    "image": "images/product1.jpg"
+  },
+  {
+    "id": "002",
+    "name": "1-seat Dark Blue Sofa",
+    "brand": "Marizza",
+    "price": 18000,
+    "image": "images/product2.jpg"
+  },
+  {
+    "id": "003",
+    "name": "Striped Rectangular Decorative Pillow",
+    "brand": "Marizza",
+    "price": 2999,
+    "image": "images/product3.jpg"
+  },
+  {
+    "id": "004",
+    "name": "Modern Living Room Sofa",
+    "brand": "Christopher",
+    "price": 39999,
+    "image": "images/product4.jpg"
+  },
+  {
+    "id": "005",
+    "name": "Home Sagewood Emerald Sofa",
+    "brand": "Christopher",
+    "price": 91239,
+    "image": "images/product5.jpg"
+  },
+  {
+    "id": "006",
+    "name": "Brown Fabric Sofa",
+    "brand": "4Home",
+    "price": 28950,
+    "image": "images/product6.jpg"
+  },
+  {
+    "id": "007",
+    "name": "Memory Foam Couch with Pillow",
+    "brand": "4Home",
+    "price": 17000,
+    "image": "images/product7.jpg"
+  },
+  {
+    "id": "008",
+    "name": "Chair Recliner with Patchwork of Grizzly Bears",
+    "brand": "Marizza",
+    "price": 2499,
+    "image": "images/product8.jpg"
+  },
+  {
+    "id": "009",
+    "name": "Dog Bed with Extra Reversible Pad",
+    "brand": "Buddy",
+    "price": 8499,
+    "image": "images/product9.jpg"
+  },
+  {
+    "id": "010",
+    "name": "Washable Pet Sofa",
+    "brand": "Buddy",
+    "price": 4599,
+    "image": "images/product10.jpg"
+  },
+  {
+    "id": "011",
+    "name": "Cat and Dog Red Cushion Bed",
+    "brand": "Buddy",
+    "price": 2199,
+    "image": "images/product11.jpg"
+  },
+  {
+    "id": "012",
+    "name": "Plush Pet Pillow",
+    "brand": "Buddy",
+    "price": 1235,
+    "image": "images/product12.jpg"
+  }
+]

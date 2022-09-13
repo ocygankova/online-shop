@@ -1,0 +1,18 @@
+.breadcrumbs {
+  padding: 130px 0 60px;
+  background-color: $color-bg-light;
+  @media (max-width: $width-m), (max-height: $height-s) {
+    padding: 80px 0 30px;
+  }
+
+  &__link {
+    font-size: 28px;
+    font-weight: 600;
+    @media (max-width: $width-m), (max-height: $height-s) {
+      font-size: 24px;
+    }
+  }
+  &__icon {
+    font-size: 28px;
+  }
+}

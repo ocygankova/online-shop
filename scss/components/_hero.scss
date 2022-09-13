@@ -1,0 +1,64 @@
+.hero {
+  height: 100vh;
+  max-width: 100vw;
+  padding: 100px 0;
+  color: $color-light;
+  background: linear-gradient(90deg, rgba($color-overlay, 0.8), rgba(darken($color-primary, 40%), 0.6)), url('../images/main-bg.jpg') center / cover no-repeat;
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  &__title {
+    font-size: 80px;
+    font-family: $font-family-highlighted;
+    line-height: 130%;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    @media (max-width: $width-m), (max-height: $height-xs) {
+      font-size: 60px;
+    }
+    @media (max-width: $width-xs) {
+      font-size: 50px;
+    }
+  }
+  &__text {
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    @media (max-width: $width-m), (max-height: $height-xs) {
+      font-size: 30px;
+    }
+    @media (max-width: $width-xs) {
+      max-width: 440px;
+      padding-top: 20px;
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 1px solid $color-light;
+    border-radius: $border-radius-s;
+    transition: background-color 0.3s ease 0s;
+    &:hover {
+      background-color: rgba($color-light, 0.2);
+    }
+  }
+  &__arrow-down {
+    padding: 8px;
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease 0s;
+    &:hover {
+      background-color: rgba($color-light, 0.2);
+    }
+  }
+}

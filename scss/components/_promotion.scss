@@ -1,0 +1,35 @@
+.promotion {
+  padding: 90px 0;
+  &__wrapper {
+    text-align: center;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: $color-dark;
+  }
+  &__title-icon {
+    color: $color-primary;
+  }
+  &__gallery {
+    padding: 40px 0;
+    @media (min-width: $width-m) {
+      & .card {
+        width: 31%;
+      }
+    }
+  }
+  &__link {
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: $color-light;
+    letter-spacing: 2px;
+    background-color: $color-primary;
+    border-radius: $border-radius-s;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease 0s;
+    &:hover {
+      background-color: lighten($color-primary, 10%);
+    }
+  }
+}

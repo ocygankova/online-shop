@@ -1,0 +1,22 @@
+.about {
+  &__wrapper {
+    max-width: 800px;
+    margin: 60px auto;
+  }
+  &__title {
+    color: $color-dark;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    color: $color-primary;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 20px;
+  }
+}

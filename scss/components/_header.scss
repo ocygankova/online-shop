@@ -1,0 +1,104 @@
+@import 'cart';
+
+.header {
+  padding: 10px 0;
+  background-color: rgba($color-light, 0.98);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  @media (max-width: $width-m), (max-height: $height-s) {
+    padding: 6px 0;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    padding-bottom: 4px;
+    color: $color-dark;
+    font-size: 42px;
+    line-height: 100%;
+    font-family: $font-family-highlighted;
+    @media (max-width: $width-s), (max-height: $height-s) {
+      font-size: 36px;
+    }
+    @media (max-width: $width-s) {
+      margin-left: 50px;
+    }
+    @media (max-width: $width-xs) {
+      font-size: 28px;
+    }
+  }
+  &__logo-icon {
+    color: $color-primary;
+  }
+
+  .menu {
+    color: $color-dark;
+    font-size: 22px;
+    font-weight: 600;
+
+    &_active {
+      @media (max-width: $width-s) {
+        .menu__list {
+          left: 0;
+        }
+      }
+    }
+
+    &__toggle-button {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      top: 6px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      @media (max-width: $width-s) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+      }
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: $width-s) {
+        background-color: $color-light;
+        text-transform: uppercase;
+        padding-top: 80px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: left 0.5s ease 0s;
+      }
+    }
+    &__item {
+      margin-right: 40px;
+      @media (max-width: $width-s) {
+        margin: 0 0 30px 0;
+        padding: 0 15px;
+      }
+    }
+    &__link {
+      transition: color 0.3s ease 0s;
+      &:hover {
+        color: $color-primary;
+      }
+      &.active {
+        color: $color-primary;
+      }
+    }
+  }
+}

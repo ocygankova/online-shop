@@ -1,0 +1,66 @@
+.filters {
+  max-width: 225px;
+  @media (max-width: $width-l) {
+    max-width: 100%;
+  }
+  &__search-box {
+    margin-bottom: 20px;
+  }
+  &__search-input {
+    background-color: $color-bg-light;
+    border-radius: $border-radius-s;
+    padding: 4px 10px;
+  }
+  &__filter {
+    margin-bottom: 30px;
+    @media (max-width: $width-l) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+  }
+  &__filter-title {
+    color: $color-dark;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @media (max-width: $width-l) {
+      margin: 0 20px 6px 0;
+    }
+  }
+
+  &__brand-item {
+    font-size: 16px;
+    line-height: 160%;
+    padding: 0 8px;
+    margin-bottom: 6px;
+    border: 1px solid transparent;
+    border-radius: $border-radius-s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba($color-muted, 0.1);
+    }
+    &_active {
+      border: 1px solid $color-muted;
+    }
+    @media (max-width: $width-l) {
+      display: inline-block;
+      margin: 0 0 6px 10px;
+    }
+  }
+  &__range-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__range-input {
+    margin: 0 10px 10px;
+    @media (max-width: $width-l) {
+      margin: 0 10px;
+    }
+  }
+  &__range-value {
+    margin-left: 9px;
+    font-weight: 600;
+  }
+}
