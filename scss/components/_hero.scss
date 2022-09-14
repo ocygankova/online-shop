@@ -57,8 +57,11 @@
     font-size: 30px;
     border-radius: 50%;
     transition: background-color 0.3s ease 0s;
-    &:hover {
-      background-color: rgba($color-light, 0.2);
+
+    @media (min-width: $width-m) {
+      &:hover {
+        background-color: rgba($color-light, 0.2);
+      }
     }
   }
 }

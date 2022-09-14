@@ -125,6 +125,10 @@
       background-color: lighten($color-primary, 10%);
     }
   }
+  &__checkout-button-info {
+    font-size: 12px;
+    margin-left: 10px;
+  }
   &__message {
     font-size: 22px;
     text-align: center;

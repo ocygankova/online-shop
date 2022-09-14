@@ -129,8 +129,9 @@ const gallery = document.querySelector('.gallery');
 const cartBadge = document.querySelector('.cart__badge');
 const cartList = document.querySelector('.cart__list');
 const cartTotalDomElement = document.querySelector('.cart__total');
+const cartCheckoutButton = document.querySelector('.cart__checkout-button');
 
-const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
+let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : {};
 
 const productObject = allProducts.reduce((acc, curr) => {
   acc[curr['id']] = curr;
@@ -157,6 +158,11 @@ cartList?.addEventListener('click', (event) => {
   }
 });
 
+cartCheckoutButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  clearCart();
+});
+
 function increaseCartQuantity(key) {
   if (cart[key] === undefined) cart[key] = 0;
   cart[key] += 1;
@@ -175,6 +181,13 @@ function removeFromCart(key) {
   localStorage.setItem('cart', JSON.stringify(cart));
   showCartList();
   showCartTotals();
+}
+function clearCart() {
+  cart = {};
+  localStorage.setItem('cart', JSON.stringify(cart));
+  showCartList();
+  showCartTotals();
+  cartDomElement.classList.remove('cart_active');
 }
 
 function showCartList() {

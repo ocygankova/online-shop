@@ -9,7 +9,7 @@
   right: 0;
   z-index: 98;
   @media (max-width: $width-m), (max-height: $height-s) {
-    padding: 6px 0;
+    padding: 10px 0 6px;
   }
   &__wrapper {
     display: flex;
